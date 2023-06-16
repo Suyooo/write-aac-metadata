@@ -1,4 +1,4 @@
-import Options from "./Options"
+import Options from "./Options.js"
 
 // tslint:disable-next-line: variable-name
 const DefaultOptions: Options = {

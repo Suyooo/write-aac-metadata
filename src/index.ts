@@ -1,8 +1,8 @@
 import { ChildProcess, spawn } from "child_process"
 import ffmpegPath from "ffmpeg-static"
-import Options from "./Options"
-import DefaultOptions from "./DefaultOptions"
-import Metadata from "./Metadata"
+import Options from "./Options.js"
+import DefaultOptions from "./DefaultOptions.js"
+import Metadata from "./Metadata.js"
 import { v4 as uuid } from "uuid"
 import path from "path"
 import fs from "fs"
@@ -87,6 +87,7 @@ import { utimes } from "utimes"
    addMetaData(args, "copyright", metadata.copyright)
    addMetaData(args, "description", metadata.description)
    addMetaData(args, "synopsis", metadata.synopsis)
+   addMetaData(args, "lyrics", metadata.lyrics)
    addMetaData(args, "title", metadata.title)
 
    args.push(`"${ffmpegFileOutputPath}"`)

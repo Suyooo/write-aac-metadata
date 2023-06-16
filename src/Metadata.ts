@@ -12,6 +12,7 @@ export default interface Metadata {
    copyright?: string,
    description?: string,
    synopsis?: string,
+   lyrics?: string,
    /**
     * The path for the cover photo that should be added to the file
     */
