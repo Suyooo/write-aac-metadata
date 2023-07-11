@@ -44,6 +44,9 @@ export default async (inputFilePath, metadata, outputFilePath, options) => {
         args.push("-map", "1");
     }
     args.push("-c", "copy");
+    if (opt.clear) {
+        args.push("-map_metadata", "-1");
+    }
     if (coverPicturePath) {
         args.push("-disposition:v:0", "attached_pic");
     }

@@ -1,5 +1,10 @@
 export default interface Options {
    /**
+    * Remove existing metadata?
+    * @default false
+    */
+   clear?: boolean,
+   /**
     * Write debugging output to the console?
     * @default false
     */

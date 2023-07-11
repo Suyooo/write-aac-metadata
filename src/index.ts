@@ -70,6 +70,10 @@ import { utimes } from "utimes"
    }
 
    args.push("-c", "copy")
+   
+   if (opt.clear) {
+      args.push("-map_metadata", "-1");
+   }
 
    if (coverPicturePath) {
       args.push("-disposition:v:0", "attached_pic")
